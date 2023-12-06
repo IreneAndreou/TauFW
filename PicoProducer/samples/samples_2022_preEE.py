@@ -12,6 +12,9 @@ samples  = [
   M('DY','DYto2L-4Jets_MLL-50',
     "DYto2L-4Jets_MLL-50",
     store=storage,url=url,files=filelist,opts="useT1=True,zpt=True"),
+  M('DY','DYto2L-4Jets_MLL-50_1J',
+  "/DYto2L-4Jets_MLL-50_1J",
+  store=storage,url=url,files=filelist,opts="useT1=True,zpt=True"),
   M('DY','DYto2L-4Jets_MLL-50_2J',
   "/DYto2L-4Jets_MLL-50_2J",
   store=storage,url=url,files=filelist,opts="useT1=True,zpt=True"),
@@ -83,11 +86,17 @@ samples  = [
   M('W','WJetsToLNu-4Jets',
     "/WJetsToLNu-4Jets",
     store=storage,url=url,files=filelist,opts="useT1=True,toppt=True"),
+  M('W','WJetsToLNu-4Jets_1J',
+    "/WJetsToLNu-4Jets_1J",
+    store=storage,url=url,files=filelist,opts="useT1=True,toppt=True"),
+  M('W','WJetsToLNu-4Jets_2J',
+    "/WJetsToLNu-4Jets_2J",
+    store=storage,url=url,files=filelist,opts="useT1=True,toppt=True"),
   M('W','WJetsToLNu-4Jets_3J',
-    "/WJetsToLNu-2Jets",
+    "WJetsToLNu-4Jets_3J",
     store=storage,url=url,files=filelist,opts="useT1=True,toppt=True"),
   M('W','WJetsToLNu-4Jets_4J',
-    "/WJetsToLNu-2Jets",
+    "/WJetsToLNu-4Jets_4J",
     store=storage,url=url,files=filelist,opts="useT1=True,toppt=True"),
 
   
@@ -148,4 +157,6 @@ samples  = [
    store=storage,url=url,files=filelist,opts="useT1=True",channels=["skim*",'mutau','mumu','emu']),
     
   # SINGLE MUON
+  D('Data','SingleMuon_Run2022C',"/SingleMuon_Run2022C",
+   store=storage,url=url,files=filelist,opts="useT1=True",channels=["skim*",'mutau','mumu','emu']),
 ]
